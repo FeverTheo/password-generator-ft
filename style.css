@@ -1,3 +1,8 @@
 div{
     height: 38px;
 }
+
+input{
+    height: 33px;
+    border-radius: 10px;
+}

@@ -1,14 +1,18 @@
-var takepassword = document.getElementById("mdp");
+// var takepassword = 
 // Fonction
 function generatePassword() {
+    var length = document.querySelector("#length").value;
     var password='';
     var caracteres='ABCDEFGHIJKLMNOPQRSTUVWXYZ'+'abcdefghijklmnopqrstuvwxyz' + '0123456789' + '#?!@$%^&*-_';
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < length; i++) {
         var char = Math.floor(Math.random()*caracteres.length);
-        password += caracteres.charAt(char);
+        password += caracteres.substring(char,char+1);
     }
-    return password;
+    // return password;
+    document.getElementById("mdp").setAttribute('value',password);
 }
+
 function geneOn() {
-    takepassword.innerHTML = generatePassword();
+    // takepassword.innerHTML = generatePassword();
 }
+
