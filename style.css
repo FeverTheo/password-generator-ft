@@ -6,3 +6,11 @@ input{
     height: 33px;
     border-radius: 10px;
 }
+
+body{
+    background-color: rgb(179, 177, 177);
+}
+
+p{
+    color: black;
+}
